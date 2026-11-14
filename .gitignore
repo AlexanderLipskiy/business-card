@@ -1,6 +1,9 @@
 # Visual Studio
 .vs/
 *.user
+*.slnx
+*.vcxproj
+*.filters
 
 # Результаты сборки
 x64/

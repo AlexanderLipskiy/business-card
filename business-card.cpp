@@ -1,13 +1,21 @@
 ﻿#include <iostream>
+#include <iomanip>
+
+void print_line()
+{
+	std::cout << std::setfill('*') << std::setw(39) << "*" << '\n';
+	std::cout << std::setfill(' ');
+}
 
 int main()
 {
-	std::cout << "****************************************\n\n";
-	std::cout << "*\tDeveloper\'s Business Card      *\n\n";
-	std::cout << "*\tName: Alexander Lipskiy        *\n";
-	std::cout << "*\tSpecialty: C++ Developer       *\n";
-	std::cout << "*\tSkills: PowerShell, Git,       *\n";
-	std::cout << "*\tvariables...                   *\n\n";
-	std::cout << "****************************************\n";
+	print_line();
+	std::cout << std::left  << std::setw(6) << "*"  << std:: setw(28) << "Developer\'s Business Card" << std::right << std::setw(6) << "*\n";
+	std::cout << std::left << std::setw(6) << "*" << std::setw(28) << "Name: Alexander Lipskiy" << std::right << std::setw(6) << "*\n";
+	std::cout << std::left << std::setw(6) << "*" << std::setw(28) << "Specialty: C++ developer" << std::right << std::setw(6) << "*\n";
+	std::cout << std::left << std::setw(6) << "*" << std::setw(28) << "Skills: PowerShell, Git," << std::right << std::setw(6) << "*\n";
+	std::cout << std::left << std::setw(6) << "*" << std::setw(28) << "C++ basics..." << std::right << std::setw(6) << "*\n";
+	print_line();
+	
 	return 0;
 }
